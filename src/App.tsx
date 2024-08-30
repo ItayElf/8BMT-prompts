@@ -13,10 +13,10 @@ export default function App() {
           <h1 className="text-5xl text-center font-light pb-16">
             8BMT Prompt Generator!
           </h1>
-          <div className="w-1/3">
+          <div className="w-1/3 flex justify-between items-center">
             <select
               value={promptGroup}
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 inline-block w-3/4 p-2.5"
               onChange={(e) => setPromptGroup(e.target.value as PromptType)}
             >
               <option value="all">All Prompts</option>
@@ -25,6 +25,9 @@ export default function App() {
               <option value="genre">Genre/Ensemble Prompts</option>
               <option value="arrangement">Arrangement Prompts</option>
             </select>
+            <button className="inline-block bg-[#E935EC] rounded-xl font-medium h-full mx-auto px-4 py-3">
+              Generate!
+            </button>
           </div>
         </div>
       </div>
