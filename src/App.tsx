@@ -54,7 +54,10 @@ export default function App() {
                 <option value="genre">Genre/Ensemble Prompts</option>
                 <option value="arrangement">Arrangement Prompts</option>
               </select>
-              <button className="inline-block bg-[#E935EC] rounded-xl font-medium h-full mx-auto px-4 py-3">
+              <button
+                onClick={() => setPrompt(getRandomPrompt(promptGroup))}
+                className="inline-block bg-[#E935EC] rounded-xl font-medium h-full mx-auto px-4 py-3"
+              >
                 Generate!
               </button>
             </div>
