@@ -68,6 +68,23 @@ export default function App() {
             <div className="mx-auto">
               <PromptView prompt={prompt} />
             </div>
+            <div className="text-center text-black/70 italic">
+              &copy;{" "}
+              <a
+                href="https://github.com/ItayElf/8BMT-prompts"
+                className="text-[#E935EC]"
+              >
+                ItayElf
+              </a>{" "}
+              for creating the website and{" "}
+              <a
+                href="https://www.youtube.com/c/8bitmusictheory"
+                className="text-[#E935EC]"
+              >
+                8-bit Music Theory
+              </a>{" "}
+              for the prompts
+            </div>
           </div>
         </div>
       </div>
