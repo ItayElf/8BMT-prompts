@@ -39,16 +39,16 @@ export default function App() {
     <>
       <Background />
       <div className="h-[100vh] w-[100vw] flex items-center justify-center ">
-        <div className="w-2/3 rounded-xl shadow-xl bg-white px-20 py-16">
+        <div className="sm:mx-12 w-full md:w-2/3 rounded-xl shadow-xl bg-white px-4 md:px-20 py-16">
           <div className="space-y-8">
             <div className="flex flex-col items-center justify-center">
-              <h1 className="text-5xl text-center font-light pb-16">
+              <h1 className="text-4xl lg:text-5xl text-center font-light pb-16">
                 8BMT Prompt Generator!
               </h1>
-              <div className="flex justify-between items-center w-2/3">
+              <div className="flex justify-between items-center lg:w-2/3 space-x-4">
                 <select
                   value={promptGroup}
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 inline-block w-3/4 p-2.5"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-md lg:text-lg xl:text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 inline-block w-3/4 p-2.5"
                   onChange={(e) => setPromptGroup(e.target.value as PromptType)}
                 >
                   <option value="all">All Prompts</option>
