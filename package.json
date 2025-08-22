@@ -1,6 +1,6 @@
 {
   "name": "8bmt-prompts",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "homepage": "https://itayelf.github.io/8BMT-prompts",
   "private": true,
   "dependencies": {
