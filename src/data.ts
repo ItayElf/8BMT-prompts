@@ -1299,6 +1299,114 @@ export const MUSICAL_PROMPTS: Prompt[] = [
     description:
       "choose any piece of music and arrange it so that it primarily uses an unusual meter(s)",
   },
+  {
+    week: "2024, wk 38",
+    title: "pirate theme, with call-and-response",
+    description:
+      "compose a pirate theme, using call-and-response in your composition",
+  },
+  {
+    week: "2024, wk 41",
+    title: "arrangement in Nintendo's oriental-esque style",
+    description:
+      "use some combination of driving percussion, quartal voicings, pentatonic scales, and traditional Japanese or Chinese instruments in your arrangment",
+  },
+  {
+    week: "2024, wk 42",
+    title: "Dracula theme in ABA form",
+    description: "compose a theme for Dracula using ternary (ABA) form",
+  },
+  {
+    week: "2024, wk 45",
+    title: "add a solo section",
+    description: "rearrange a song to include an original solo section",
+  },
+  {
+    week: "2024, wk 49",
+    title: "reharmonize a piece and use some suspensions",
+    description:
+      "make an arrangement of a song where the chords are different from the original, making sure to include some suspension chords",
+  },
+  {
+    week: "2025, wk 1",
+    title: "character theme, with embellishments",
+    description:
+      "compose a character theme with a melody that incorporates all four embellishments discussed in the video: enclosures, passing tones, arpeggios, and escape tones",
+  },
+  {
+    week: "2025, wk 5",
+    title: "contrafact",
+    description: "make your own contrafact",
+  },
+  {
+    week: "2025, wk 7",
+    title: "love theme, with secondary dominants",
+    description:
+      "compose a love theme and include at least one secondary dominant chord in your piece",
+  },
+  {
+    week: "2025, wk 11",
+    title: "dinosaur music, with three time signatures",
+    description:
+      "compose music inspired by dinosaurs and use at least three time signatures",
+  },
+  {
+    week: "2025, wk 12",
+    title: "theme and variations arrangement",
+    description:
+      "take any VGM melody and create a theme and variations arrangement with it",
+  },
+  {
+    week: "2025, wk 15",
+    title: "quote another piece",
+    description:
+      "compose an original piece of music that includes a short quote from another piece of music",
+  },
+  {
+    week: "2025, wk 17",
+    title: "town theme, with uncommon scales",
+    description:
+      "compose a village, city, or town theme, but your piece must be based on something other than the basic major, natural minor, harmonic minor, or melodic minor scales",
+  },
+  {
+    week: "2025, wk 19",
+    title: "unusual location theme, with silence",
+    description:
+      "compose a theme for a place that you don’t expect to get its own challenge — and use silence some way in your piece",
+  },
+  {
+    week: "2025, wk 20",
+    title: "arrangement with human voice",
+    description:
+      "arrange any instrumental piece of music and include human voice in some way",
+  },
+  {
+    week: "2025, wk 21",
+    title: "celebration theme, using '7' somehow",
+    description: "compose a celebratory tune that incorporates ‘7’ in some way",
+  },
+  {
+    week: "2025, wk 23",
+    title: "use another piece as roadmap",
+    description: "compose a new piece, using another piece as a “roadmap”",
+  },
+  {
+    week: "2025, wk 27",
+    title: "do opposite of a prior propmt",
+    description: "pick a previous prompt and do the opposite of it",
+  },
+  {
+    week: "2025, wk 31",
+    title: "summer theme, including halftime/doubletime section",
+    description:
+      "compose a summer-inspired track that includes a section with a halftime or doubletime feel",
+  },
+  {
+    week: "2025, wk 33",
+    title: "forest theme, with interesting bass part",
+    description:
+      "compose a jungle/forest/woods theme and include an interesting part for the lowest instrument in your ensemble",
+  },
 ];
 
 export const GENRE_PROMPTS: Prompt[] = [
