@@ -2086,6 +2086,28 @@ export const ARRANGEMENT_PROMPTS: Prompt[] = [
     description:
       "take any videogame area or level theme and transform it into a boss theme",
   },
+  {
+    week: "2024, wk 39",
+    title: "arrange Hip Tanaka music",
+    description: "make an arrangement from any Hip Tanaka track",
+  },
+  {
+    week: "2024, wk 43",
+    title: "Halloween music arrangement into new genre",
+    description:
+      "arrange any Halloween-appropriate piece by changing its genre",
+  },
+  {
+    week: "2025, wk 28",
+    title: "arrange a musical first",
+    description:
+      "arrange a piece of music that was your first attempt at something",
+  },
+  {
+    week: "2025, wk 30",
+    title: "arrange a metal song",
+    description: "make an arrangement of any metal song",
+  },
 ];
 
 export const ALL_PROMPTS: Prompt[] = [
