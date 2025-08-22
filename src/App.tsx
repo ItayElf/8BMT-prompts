@@ -38,6 +38,8 @@ export default function App() {
 
   const onCountChange = useCallback(
     (value: number) => {
+      setCount(value);
+      if (value === 0) return;
       const newPrompts = [...prompts];
       while (newPrompts.length !== value) {
         if (value > newPrompts.length) {
@@ -46,7 +48,6 @@ export default function App() {
           newPrompts.pop();
         }
       }
-      setCount(value);
       setPrompts(newPrompts);
     },
     [promptGroup, prompts]
@@ -77,11 +78,15 @@ export default function App() {
                 <input
                   type="number"
                   min={1}
-                  value={count}
+                  value={count === 0 ? "" : count}
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 xl:w-20 w-14 h-full"
-                  onChange={(e) => onCountChange(Number(e.target.value ?? "0"))}
+                  onChange={(e) => {
+                    console.log({ e: e.target.value });
+                    onCountChange(Number(e.target.value ?? "1"));
+                  }}
                 />
                 <button
+                  disabled={count === 0}
                   onClick={() =>
                     setPrompts(
                       new Array(count)
@@ -89,7 +94,7 @@ export default function App() {
                         .map((_) => getRandomPrompt(promptGroup))
                     )
                   }
-                  className="inline-block bg-[#E935EC] rounded-xl font-medium h-full mx-auto px-4 py-3"
+                  className="inline-block bg-[#E935EC] rounded-xl font-medium h-full mx-auto px-4 py-3 disabled:bg-gray-400"
                 >
                   Generate!
                 </button>
