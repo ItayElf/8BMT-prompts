@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import {
   ALL_PROMPTS,
   ARRANGEMENT_PROMPTS,
@@ -33,19 +33,36 @@ const getRandomPrompt = (groupType: PromptType) => {
 
 export default function App() {
   const [promptGroup, setPromptGroup] = useState<PromptType>("all");
-  const [prompt, setPrompt] = useState(getRandomPrompt(promptGroup));
+  const [prompts, setPrompts] = useState([getRandomPrompt(promptGroup)]);
+  const [count, setCount] = useState(1);
+
+  const onCountChange = useCallback(
+    (value: number) => {
+      const newPrompts = [...prompts];
+      while (newPrompts.length !== value) {
+        if (value > newPrompts.length) {
+          newPrompts.push(getRandomPrompt(promptGroup));
+        } else {
+          newPrompts.pop();
+        }
+      }
+      setCount(value);
+      setPrompts(newPrompts);
+    },
+    [promptGroup, prompts]
+  );
 
   return (
     <>
       <Background />
-      <div className="h-[100vh] w-[100vw] flex items-center justify-center ">
+      <div className="h-screen w-screen flex items-center justify-center">
         <div className="sm:mx-12 w-full md:w-2/3 rounded-xl shadow-xl bg-white px-4 md:px-20 py-16">
           <div className="space-y-8">
             <div className="flex flex-col items-center justify-center">
               <h1 className="text-4xl lg:text-5xl text-center font-light pb-16">
                 8BMT Prompt Generator!
               </h1>
-              <div className="flex justify-between items-center lg:w-2/3 space-x-4">
+              <div className="flex justify-between items-center lg:w-2/3 space-x-2 sm:space-x-4">
                 <select
                   value={promptGroup}
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-md lg:text-lg xl:text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 inline-block w-3/4 p-2.5"
@@ -57,8 +74,21 @@ export default function App() {
                   <option value="genre">Genre/Ensemble Prompts</option>
                   <option value="arrangement">Arrangement Prompts</option>
                 </select>
+                <input
+                  type="number"
+                  min={1}
+                  value={count}
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 xl:w-20 w-14 h-full"
+                  onChange={(e) => onCountChange(Number(e.target.value ?? "0"))}
+                />
                 <button
-                  onClick={() => setPrompt(getRandomPrompt(promptGroup))}
+                  onClick={() =>
+                    setPrompts(
+                      new Array(count)
+                        .fill(null)
+                        .map((_) => getRandomPrompt(promptGroup))
+                    )
+                  }
                   className="inline-block bg-[#E935EC] rounded-xl font-medium h-full mx-auto px-4 py-3"
                 >
                   Generate!
@@ -66,7 +96,19 @@ export default function App() {
               </div>
             </div>
             <div className="mx-auto">
-              <PromptView prompt={prompt} />
+              <div
+                className={`grid gap-4 items-stretch grid-cols-1 max-h-[50vh] overflow-y-auto ${
+                  prompts.length === 1
+                    ? "xl:grid-cols-1"
+                    : prompts.length === 2
+                    ? "xl:grid-cols-2"
+                    : "xl:grid-cols-3"
+                }`}
+              >
+                {prompts.map((p) => (
+                  <PromptView prompt={p} />
+                ))}
+              </div>
             </div>
             <div className="text-center text-black/70 italic">
               &copy;{" "}
