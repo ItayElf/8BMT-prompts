@@ -84,6 +84,8 @@ export default function App() {
                 8-bit Music Theory
               </a>{" "}
               for the prompts
+              <br />
+              The website was last updated on 22/08/2025
             </div>
           </div>
         </div>
