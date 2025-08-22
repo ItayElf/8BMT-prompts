@@ -55,7 +55,7 @@ export default function App() {
   return (
     <>
       <Background />
-      <div className="h-[100vh] w-[100vw] flex items-center justify-center ">
+      <div className="h-screen w-screen flex items-center justify-center">
         <div className="sm:mx-12 w-full md:w-2/3 rounded-xl shadow-xl bg-white px-4 md:px-20 py-16">
           <div className="space-y-8">
             <div className="flex flex-col items-center justify-center">
@@ -96,7 +96,19 @@ export default function App() {
               </div>
             </div>
             <div className="mx-auto">
-              <PromptView prompt={prompts[0]} />
+              <div
+                className={`grid gap-4 items-stretch grid-cols-1 max-h-[50vh] overflow-y-auto ${
+                  prompts.length === 1
+                    ? "xl:grid-cols-1"
+                    : prompts.length === 2
+                    ? "xl:grid-cols-2"
+                    : "xl:grid-cols-3"
+                }`}
+              >
+                {prompts.map((p) => (
+                  <PromptView prompt={p} />
+                ))}
+              </div>
             </div>
             <div className="text-center text-black/70 italic">
               &copy;{" "}
