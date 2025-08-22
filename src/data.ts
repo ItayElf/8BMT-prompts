@@ -138,7 +138,7 @@ export const THEMATIC_PROMPTS: Prompt[] = [
   {
     week: "2020, wk 11",
     title: "pirate theme",
-    description: 'compose a piece with the theme of "pirate',
+    description: 'compose a piece with the theme of "pirate"',
   },
   {
     week: "2020, wk 13",
@@ -754,6 +754,118 @@ export const THEMATIC_PROMPTS: Prompt[] = [
     title: "turn area/level theme into boss music",
     description:
       "take any videogame area or level theme and transform it into a boss theme",
+  },
+  {
+    week: "2024, wk 38",
+    title: "pirate theme, with call-and-response",
+    description:
+      "compose a pirate theme, using call-and-response in your composition",
+  },
+  {
+    week: "2024, wk 40",
+    title: "compose two title themes under 36 bars",
+    description:
+      "compose two contrasting title themes, with both versions combined totaling no more than 36 measures",
+  },
+  {
+    week: "2024, wk 42",
+    title: "Dracula theme in ABA form",
+    description: "compose a theme for Dracula using ternary (ABA) form",
+  },
+  {
+    week: "2024, wk 46",
+    title: "abandoned places atonal music",
+    description: "compose an atonal theme for an abandoned or forgotten place",
+  },
+  {
+    week: "2024, wk 48",
+    title: "waterfall painting music with percussion",
+    description:
+      "compose an original piece inspired by the painting Urami Fall in Nikko, and include at least one pitched and one unpitched percussion instrument",
+  },
+  {
+    week: "2025, wk 1",
+    title: "character theme, with embellishments",
+    description:
+      "compose a character theme with a melody that incorporates all four embellishments discussed in the video: enclosures, passing tones, arpeggios, and escape tones",
+  },
+  {
+    week: "2025, wk 3",
+    title: "flying theme",
+    description: "compose a flying theme",
+  },
+  {
+    week: "2025, wk 4",
+    title: "make Dark World version of a piece",
+    description:
+      "take any videogame level or area theme and make a Dark World version of it",
+  },
+  {
+    week: "2025, wk 7",
+    title: "love theme, with secondary dominants",
+    description:
+      "compose a love theme and include at least one secondary dominant chord in your piece",
+  },
+  {
+    week: "2025, wk 8",
+    title: "beach arrangement",
+    description: "make a beach-themed arrangement of any piece of music",
+  },
+  {
+    week: "2025, wk 9",
+    title: "contrasting ideas",
+    description: "compose a piece that explores two contrasting ideas",
+  },
+  {
+    week: "2025, wk 11",
+    title: "dinosaur music, with three time signatures",
+    description:
+      "compose music inspired by dinosaurs and use at least three time signatures",
+  },
+  {
+    week: "2025, wk 13",
+    title: "sad boss music",
+    description: "compose a theme for a tragic boss battle",
+  },
+  {
+    week: "2025, wk 17",
+    title: "town theme, with uncommon scales",
+    description:
+      "compose a village, city, or town theme, but your piece must be based on something other than the basic major, natural minor, harmonic minor, or melodic minor scales",
+  },
+  {
+    week: "2025, wk 19",
+    title: "unusual location theme, with silence",
+    description:
+      "compose a theme for a place that you don’t expect to get its own challenge — and use silence some way in your piece",
+  },
+  {
+    week: "2025, wk 21",
+    title: "celebration theme, using '7' somehow",
+    description: "compose a celebratory tune that incorporates ‘7’ in some way",
+  },
+  {
+    week: "2025, wk 25",
+    title: "space, with mixed ensemble",
+    description:
+      "Compose a space theme featuring at least one Western classical instrument, at least one electric or electronic instrument, and at least one instrument not typically found in Western classical or popular music",
+  },
+  {
+    week: "2025, wk 31",
+    title: "summer theme, including halftime/doubletime section",
+    description:
+      "compose a summer-inspired track that includes a section with a halftime or doubletime feel",
+  },
+  {
+    week: "2025, wk 32",
+    title: "dream sequence arrangement",
+    description: "make an arrangement of any piece fit for a dream sequence",
+  },
+  {
+    week: "2025, wk 33",
+    title: "forest theme, with interesting bass part",
+    description:
+      "compose a jungle/forest/woods theme and include an interesting part for the lowest instrument in your ensemble",
   },
 ];
 
