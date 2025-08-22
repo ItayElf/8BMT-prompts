@@ -1650,6 +1650,92 @@ export const GENRE_PROMPTS: Prompt[] = [
     title: "ambient music",
     description: "compose ambient music",
   },
+  {
+    week: "2024, wk 37",
+    title: "funk arrangement",
+    description: "Make a funk arrangement from any piece of music",
+  },
+  {
+    week: "2024, wk 44",
+    title: "beautiful waltz week",
+    description:
+      "compose a waltz in triple meter that exemplifies the word “beautiful”",
+  },
+  {
+    week: "2024, wk 46",
+    title: "abandoned places atonal music",
+    description: "compose an atonal theme for an abandoned or forgotten place",
+  },
+  {
+    week: "2024, wk 50",
+    title: "compose three videogame jingles",
+    description: "imagine a game and compose three jingles for it",
+  },
+  {
+    week: "2025, wk 2",
+    title: "arrangment using the same instruments",
+    description:
+      "arrange any piece of music, using the same instrumentation as the original",
+  },
+  {
+    week: "2025, wk 18",
+    title: "dance music arrangement",
+    description: "make a dance arrangement of any videogame track",
+  },
+  {
+    week: "2025, wk 20",
+    title: "arrangement with human voice",
+    description:
+      "arrange any instrumental piece of music and include human voice in some way",
+  },
+  {
+    week: "2025, wk 24",
+    title: "jazz fusion arrangement",
+    description: "make a jazz fusion arrangement of any piece of music",
+  },
+  {
+    week: "2025, wk 25",
+    title: "space, with mixed ensemble",
+    description:
+      "Compose a space theme featuring at least one Western classical instrument, at least one electric or electronic instrument, and at least one instrument not typically found in Western classical or popular music",
+  },
+  {
+    week: "2025, wk 6",
+    title: "arrange a children's TV theme",
+    description: "arrange the theme song of any children's TV show",
+  },
+  {
+    week: "2025, wk 10",
+    title: "Chrono Trigger arrangement",
+    description: "arrange any piece from the Chrono Trigger soundtrack",
+  },
+  {
+    week: "2025, wk 14",
+    title: "chocobo theme arrangement",
+    description: "arrange the Chocobo Theme",
+  },
+  {
+    week: "2025, wk 16",
+    title: "bigify 8-bit music",
+    description:
+      "take any VGM piece from the 8-bit era or earlier (NES, Game Boy, Sega Master System, Atari 2600, Commodore 64, etc.) and arrange it for a larger ensemble",
+  },
+  {
+    week: "2025, wk 22",
+    title: "non-VGM into boss music",
+    description: "arrange any non-VGM track into boss battle music",
+  },
+  {
+    week: "2025, wk 26",
+    title: "arrange VGM music from 2020-2025",
+    description:
+      "arrange any piece of VGM created for games released in the past five years",
+  },
+  {
+    week: "2025, wk 29",
+    title: "solo instrument composition",
+    description: "write an original composition for solo instrument",
+  },
 ];
 
 export const ARRANGEMENT_PROMPTS: Prompt[] = [
