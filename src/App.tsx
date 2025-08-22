@@ -36,9 +36,21 @@ export default function App() {
   const [prompts, setPrompts] = useState([getRandomPrompt(promptGroup)]);
   const [count, setCount] = useState(1);
 
-  const onCountChange = useCallback((value: number) => {
-    setCount(value);
-  }, []);
+  const onCountChange = useCallback(
+    (value: number) => {
+      const newPrompts = [...prompts];
+      while (newPrompts.length !== value) {
+        if (value > newPrompts.length) {
+          newPrompts.push(getRandomPrompt(promptGroup));
+        } else {
+          newPrompts.pop();
+        }
+      }
+      setCount(value);
+      setPrompts(newPrompts);
+    },
+    [promptGroup, prompts]
+  );
 
   return (
     <>
